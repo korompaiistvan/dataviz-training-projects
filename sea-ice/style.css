@@ -1,0 +1,134 @@
+@font-face {
+  font-family: TableauSemiBold;
+  src: url("./assets/fonts/Tableau-Semibold.woff2") format("woff2");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: TableauLight;
+  src: url("./assets/fonts/Tableau-Light.woff2") format("woff2");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+body {
+  font-family: TableauLight, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  background-color: #555555;
+  overflow: hidden;
+}
+
+.image {
+  background-image: url("./assets/img/pexels-jonathan-cooper.jpg");
+  height: 1000px;
+  width: 1300px;
+  margin: auto;
+  margin-top: 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.layout {
+  height: 100%;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 280px 720px 250px;
+  grid-template-rows: 900px 300px;
+  gap: 1rem;
+  margin: 0vh 0vh 0vh 0vh;
+}
+.title-section {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+h1 {
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 300px;
+  left: 70px;
+  text-align: right;
+  font-size: 38px;
+}
+
+.viz {
+  height: 80%;
+  width: fit;
+  border: 1px solid gray;
+  box-sizing: border-box;
+  grid-column: 2;
+  grid-row: 1;
+  padding-top: 10vh;
+}
+
+.description-section {
+  box-sizing: border-box;
+  margin-left: 5px;
+  margin-right: 5px;
+  grid-column: 3;
+  grid-row: 1;
+  padding-top: 10vh;
+}
+.footer-section {
+  box-sizing: border-box;
+  padding-left: 20px;
+  margin-bottom: 50px;
+  grid-column: 1/4;
+  grid-row: 2;
+}
+
+.footer-section div {
+  color: #555555;
+  font-family: "TableauSemiBold";
+  font-size: 12px;
+  display: inline-block;
+}
+
+.footer-section img {
+  height: 16px;
+  width: 16px;
+}
+
+h1,
+h4,
+p {
+  color: white;
+}
+
+#fontweight {
+  font-family: "TableauSemibold";
+}
+
+#fontsize {
+  font-size: 82px;
+}
+
+.tooltip {
+  position: absolute;
+  border-radius: 0px;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  pointer-events: none;
+  text-align: center;
+}
+
+hr {
+  width: 150px;
+}
+
+.columns {
+  display: inline;
+}

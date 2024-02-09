@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="main.js"></script>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+    <title>NYP: Piano Concertos since 1846</title>
+  </head>
+  <body>
+    <div class="desktop-layout">
+      <div class="title-big">Piano Concertos</div>
+      <div class="title-small">in the history of the</div>
+      <div class="title-big">New York Philharmonic</div>
+      <div class="title-small">since 1846</div>
+
+      <div class="main-content">
+        <div id="connectors">
+          <!-- connector lines  -->
+
+          <svg
+            width="1192"
+            height="881"
+            viewBox="0 0 1192 881"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1119.81 614C1119.81 883.052 1103.44 854.091 727 854.091"
+              stroke="url(#paint0_linear_123_2)"
+              stroke-width="1"
+            />
+            <path
+              d="M1134.68 614C1134.68 846.684 1117.69 821.638 727.001 821.638"
+              stroke="url(#paint1_linear_123_2)"
+              stroke-width="1"
+            />
+            <path
+              d="M1177 614C1177 737.92 1158.25 724.581 727 724.581"
+              stroke="url(#paint2_linear_123_2)"
+              stroke-width="1"
+            />
+            <path
+              d="M1162.82 614C1162.82 775.36 1144.66 757.992 727 757.992"
+              stroke="url(#paint3_linear_123_2)"
+              stroke-width="1"
+            />
+            <path
+              d="M1147.01 614C1147.01 810.669 1129.51 789.5 727.001 789.5"
+              stroke="url(#paint4_linear_123_2)"
+              stroke-width="1"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_123_2"
+                x1="923.406"
+                y1="614"
+                x2="923.406"
+                y2="855"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="white" stop-opacity="0.04" />
+                <stop offset="0.177083" stop-color="white" />
+                <stop offset="1" stop-color="white" />
+              </linearGradient>
+              <linearGradient
+                id="paint1_linear_123_2"
+                x1="930.839"
+                y1="614"
+                x2="930.839"
+                y2="822.424"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="white" stop-opacity="0.04" />
+                <stop offset="0.177083" stop-color="white" />
+                <stop offset="1" stop-color="white" />
+              </linearGradient>
+              <linearGradient
+                id="paint2_linear_123_2"
+                x1="952"
+                y1="614"
+                x2="952"
+                y2="725"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="white" stop-opacity="0.04" />
+                <stop offset="0.177083" stop-color="white" />
+                <stop offset="1" stop-color="white" />
+              </linearGradient>
+              <linearGradient
+                id="paint3_linear_123_2"
+                x1="944.912"
+                y1="614"
+                x2="944.912"
+                y2="758.537"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="white" stop-opacity="0.04" />
+                <stop offset="0.177083" stop-color="white" />
+                <stop offset="1" stop-color="white" />
+              </linearGradient>
+              <linearGradient
+                id="paint4_linear_123_2"
+                x1="937.006"
+                y1="614"
+                x2="937.006"
+                y2="790.164"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="white" stop-opacity="0.04" />
+                <stop offset="0.177083" stop-color="white" />
+                <stop offset="1" stop-color="white" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div id="radial-viz"></div>
+
+        <div class="how-to-container">
+          <div class="how-to-title">How to read?</div>
+          <div class="how-to-text">
+            Each arc represents one composer whose piano concerto(s) have been
+            played by the New York Philharmonic since 1846.
+          </div>
+          <div class="how-to-text">
+            Each dot represents the number of the concerts including a piano
+            concerto by composer and year, its size is driven by the number of
+            these concerts.
+          </div>
+          <div class="how-to-text">
+            Only composers with min. 5 concerts (in total) are displayed.
+          </div>
+        </div>
+        <div id="barchart">Top 5 composers</div>
+      </div>
+      <div class="footer">
+        <div class="data-source">
+          data source: Open Data of the New York Philharmonic
+        </div>
+        <div class="created-by">created by: Zsofia Nika</div>
+      </div>
+    </div>
+  </body>
+</html>
